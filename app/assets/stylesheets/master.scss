@@ -43,3 +43,13 @@
     font-weight: lighter;
     letter-spacing: -0.3px;
 }
+
+.invalid-feedback {
+    color: #ff3333;
+    background-color: black;
+    border-radius: 3px;
+    padding: 2px 8px 2px 8px;
+    font-size: 40px;
+    width: 400px;
+    font-weight: bolder;
+  }
