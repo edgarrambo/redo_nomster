@@ -1,3 +1,42 @@
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+    <%= image_tag 'slider1.jpg', class: 'img-fluid' %>
+    <div class="carousel-caption d-none d-md-block">
+    <h3>Life is too short not to go out and eat with friends</h3>
+    </div>
+  </div>
+    <div class="carousel-item">
+    <%= image_tag 'slider2.jpg', class: 'img-fluid' %>
+    <div class="carousel-caption d-none d-md-block 2">
+      <h3>Remember the best things in life are non-essential.</h3>
+    </div>
+    </div>
+    <div class="carousel-item">
+    <%= image_tag 'slider3.jpg', class: 'img-fluid' %>
+    <div class="carousel-caption d-none d-md-block">
+    <h3>Enjoy every drink, meal, and conversation.</h3>
+  </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="comment-box">
+<h2><u>Tell us about your favorite places to eat around the world</u></h2>
+<h3>Places you cannot wait to visit after the plague</h3>
+</div>
 <% @places.each do |place| %>
     <div class="booyah-box col-10 offset-1">
     <h1><%= link_to place.name, place_path(place) %></h1><br />
